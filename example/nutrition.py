@@ -25,4 +25,4 @@ vals = {}
 for row in c:
   vals[row[0]] = str(row[2]) + ' ' + row[1]
 
-print json.dumps(vals, sort_keys=True, indent=4)
+print (json.dumps(vals, sort_keys=True, indent=4))

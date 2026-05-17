@@ -22,4 +22,4 @@ c.execute("""
 """, ('%' + sys.argv[1] + '%',))
 
 for row in c:
-  print row[0], row[1]
+  print (row[0], row[1])
