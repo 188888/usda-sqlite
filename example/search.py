@@ -11,4 +11,4 @@ search_clause = '%' + sys.argv[1] + '%'
 c = conn.cursor()
 c.execute('SELECT id, long_desc FROM food WHERE long_desc LIKE ?', (search_clause,))
 for row in c:
-  print row[0], row[1]
+  print (row[0], row[1])
